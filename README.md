@@ -1,7 +1,7 @@
 # IntroLab-2015
 **Thai language**
 
-Mid
+**Mid**
 * **Lab1** - [Link](https://drive.google.com/open?id=0B0Tn9SDbGL_Ub3dTb21rSnpYR00)
 * **Lab1.5** - [Link](https://drive.google.com/open?id=0B0Tn9SDbGL_Ub1dBSW5MWmgyQ2M)
 * **Lab2** - [Link](https://drive.google.com/open?id=0B0Tn9SDbGL_UbHRtN0JFUHFYSHM)
@@ -12,7 +12,7 @@ Mid
 * **Lab7** - [Link](https://drive.google.com/open?id=0B0Tn9SDbGL_ULXRUQ0Q2S0pyMWc)
 * **Lab8** - [Link](https://drive.google.com/open?id=0B0Tn9SDbGL_Uc3ppMVlFX3hhLUE)
 
-Final
+**Final**
 * **Lab10** - [Link](https://drive.google.com/open?id=0B0Tn9SDbGL_UY1JJQjM5YnRWc3M)
 * **Lab11** - [Link](https://drive.google.com/open?id=0B0Tn9SDbGL_USVQydGRCR2VYb0k)
 * **Lab12** - [Link](https://drive.google.com/open?id=0B0Tn9SDbGL_UX3dGT0Q5RExQNXc)
