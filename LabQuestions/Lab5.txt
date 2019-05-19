@@ -1,0 +1,297 @@
+1.สถิติคะแนน
+
+จงเขียนโปรแกรมโดยใช้โครงสร้างแบบทำซ้ำ เพื่อรับคะแนนสอบวิชาภาษาไทยของนักเรียนจำนวน 10 คน ซึ่งกำหนดให้มีคะแนนตั้งแต่ 0 จนถึง 100 แล้วแสดงผลคะแนนมากที่สุด (Maximum score) คะแนนน้อยที่สุด (Minimum score) และคะแนนเฉลี่ย (Average score)
+หมายเหตุ ให้แสดงข้อความแจ้งข้อความโต้ตอบหรือข้อผิดพลาดที่อาจเกิดขึ้นในกรณีต่างๆ ดังนี้
+
+“Score is out of range.” เมื่อคะแนนไม่อยู่ในช่วง 0 – 100
+ตัวอย่าง Input/Output
+
+Enter score: 34
+Enter score: 101
+Score is out of range.
+Enter score: 80
+Enter score: 22
+Enter score: 56
+Enter score: 78
+Enter score: 92
+Enter score: 69
+Enter score: 78
+Enter score: 83
+Enter score: 46
+Maximum score is 92.00
+Minimum score is 22.00
+Average score is 63.80
+
+2.สถิติคะแนน (2)
+
+จงเขียนโปรแกรมโดยใช้โครงสร้างแบบทำซ้ำ โดยให้รับจำนวนนักเรียนทั้งหมดเป็นจำนวนเต็ม จากนั้นรับคะแนนสอบวิชาภาษาไทยของนักเรียนเหล่านั้น ซึ่งกำหนดให้มีคะแนนตั้งแต่ 0 จนถึง 100 แล้วแสดงผลคะแนนมากที่สุด (Maximum score) คะแนนน้อยที่สุด (Minimum score) และคะแนนเฉลี่ย (Average score)
+หมายเหตุ ให้แสดงข้อความแจ้งข้อความโต้ตอบหรือข้อผิดพลาดที่อาจเกิดขึ้นในกรณีต่างๆ ดังนี้
+
+“Invalid number of students, program is terminated.” เมื่อจำนวนนักเรียนที่รับเข้ามามีค่าน้อยกว่าหรือเท่ากับ 0
+“Score is out of range.” เมื่อคะแนนไม่อยู่ในช่วง 0 – 100
+ตัวอย่าง Input/Output 1
+
+Enter number of students: 0
+Invalid number of students, program is terminated.
+ตัวอย่าง Input/Output 2
+
+Enter number of students: 5
+Enter score: 34
+Enter score: 101
+Score is out of range.
+Enter score: 80
+Enter score: 22
+Enter score: 56
+Enter score: 78
+Maximum score is 80.00
+Minimum score is 22.00
+Average score is 54.00
+
+3.ทายตัวเลข (loop)
+
+จงเขียนโปรแกรมสำหรับเล่นเกมทายตัวเลขที่มีค่าตั้งแต่ 0 – 100 โดยกำหนดให้โปรแกรมกำหนดค่าเป้าหมาย (target) สำหรับทาย จากนั้นให้รับจำนวนเต็ม 1 จำนวน แล้วเปรียบเทียบว่าจำนวนดังกล่าวมีค่ามากกว่า น้อยกว่า หรือเท่ากับค่าเป้าหมายที่กำหนดไว้หรือไม่ นอกจากนี้ให้ใช้โครงสร้างแบบทำซ้ำเพื่อให้มีการรับจำนวนเต็มเพื่อเปรียบเทียบกับค่าเป้าหมายในรอบถัดไปจนกว่าจะทายค่าเป้าหมายได้ถูกต้อง พร้อมกับให้นับจำนวนครั้งที่ใช้ทายจนได้ค่าเป้าหมาย (นับรวมครั้งที่ทายตัวเลขนอกช่วงที่กำหนดด้วย) แล้วแสดงผลจำนวนครั้งดังกล่าวก่อนสิ้นสุดการทำงาน
+หมายเหตุ ให้แสดงข้อความแจ้งข้อความโต้ตอบหรือข้อผิดพลาดที่อาจเกิดขึ้นในกรณีต่างๆ ดังนี้
+
+“Sorry, your guess is out of range.” เมื่อตัวเลขที่ทายไม่อยู่ในช่วง 0 – 100
+“Sorry, your guess is too low.” เมื่อตัวเลขที่ทายมีค่าน้อยกว่าค่าเป้าหมาย
+“Sorry, your guess is too high.” เมื่อตัวเลขที่ทายมีค่าน้อยกว่าค่าเป้าหมาย
+“Congratulations, your guess is correct. Total number of guesses is x.” เมื่อตัวเลขที่ทายมีค่าตรงกับค่าเป้าหมาย พร้อมจำนวนเต็ม x ซึ่งหมายถึงจำนวนครั้งในการทายทั้งหมด
+ตัวอย่าง Input/Output 1
+
+Enter your guess: 13
+Sorry, your guess is too low.
+Enter your guess: 1000
+Sorry, your guess is out of range.
+Enter your guess: 100
+Sorry, your guess is too high.
+Enter your guess: 35
+Sorry, your guess is too low.
+Enter your guess: 87
+Sorry, your guess is too high.
+Enter your guess: 38
+Sorry, your guess is too low.
+Enter your guess: 82
+Sorry, your guess is too high.
+Enter your guess: 44
+Sorry, your guess is too low.
+Enter your guess: 80
+Sorry, your guess is too high.
+Enter your guess: 50
+Sorry, your guess is too low.
+Enter your guess: 76
+Sorry, your guess is too high.
+Enter your guess: 72
+Congratulations, your guess is correct.
+Total number of guesses is 12.
+
+4.ทายตัวเลข (จำกัดครั้ง)
+
+จงเขียนโปรแกรมสำหรับเล่นเกมทายตัวเลขที่มีค่าตั้งแต่ 0 – 100 โดยกำหนดให้โปรแกรมกำหนดค่าเป้าหมาย (target) สำหรับทาย จากนั้นให้รับจำนวนเต็ม 1 จำนวน แล้วเปรียบเทียบว่าจำนวนดังกล่าวมีค่ามากกว่า น้อยกว่า หรือเท่ากับค่าเป้าหมายที่กำหนดไว้หรือไม่ นอกจากนี้ให้ใช้โครงสร้างแบบทำซ้ำเพื่อให้มีการรับจำนวนเต็มเพื่อเปรียบเทียบกับค่าเป้าหมายในรอบถัดไป กำหนดให้ทายตัวเลขได้สูงสุดไม่เกิน 6 ครั้ง ในกรณีที่ทายไม่ถูกภายใน 6 ครั้ง ให้เฉลยค่าเป้าหมาย และกรณีที่ทายถูกภายใน 6 ครั้ง ให้นับจำนวนครั้งที่ใช้ทายจนได้ค่าเป้าหมายแล้วแสดงผลจำนวนครั้งดังกล่าว (นับรวมครั้งที่ทายตัวเลขนอกช่วงที่กำหนดด้วย) แล้วแสดงผลจำนวนครั้งดังกล่าวก่อนสิ้นสุดการทำงาน
+
+หมายเหตุ ให้แสดงข้อความแจ้งข้อความโต้ตอบหรือข้อผิดพลาดที่อาจเกิดขึ้นในกรณีต่างๆ ดังนี้
+
+“Sorry, your guess is out of range.” เมื่อตัวเลขที่ทายไม่อยู่ในช่วง 0 – 100
+“Sorry, your guess is too low.” เมื่อตัวเลขที่ทายมีค่าน้อยกว่าค่าเป้าหมาย
+“Sorry, your guess is too high.” เมื่อตัวเลขที่ทายมีค่าน้อยกว่าค่าเป้าหมาย
+“Congratulations, your guess is correct. Total number of guesses is x.” เมื่อตัวเลขที่ทายมีค่าตรงกับค่าเป้าหมาย พร้อมจำนวนเต็ม x ซึ่งหมายถึงจำนวนครั้งในการทายทั้งหมด
+“Maximum guess is reached, target is x.”
+ตัวอย่าง Input/Output 1
+
+Enter your guess: 13
+Sorry, your guess is too low.
+Enter your guess: 35
+Sorry, your guess is too low.
+Enter your guess: 60
+Sorry, your guess is too low.
+Enter your guess: 75
+Sorry, your guess is too high.
+Enter your guess: 72
+Congratulations, your guess is correct.
+Total number of guesses is 5.
+
+ตัวอย่าง Input/Output 2
+
+
+Enter your guess: 13
+Sorry, your guess is too low.
+Enter your guess: 96
+Sorry, your guess is too high.
+Enter your guess: 47
+Sorry, your guess is too low.
+Enter your guess: 91
+Sorry, your guess is too high.
+Enter your guess: 55
+Sorry, your guess is too low.
+Enter your guess: 83
+Sorry, your guess is too high.
+Total number of guesses is 6.
+Maximum guess is reached, target is 72.
+
+5.แปลงเลขฐาน
+
+จงเขียนโปรแกรมเพื่อรับจำนวนเต็มที่มีค่าตั้งแต่ 0 – 1000 จากนั้นให้แปลงจำนวนเต็มดังกล่าวให้เป็นเลขฐานสองแล้วแสดงผลลัพธ์ โดยกำหนดให้โครงสร้างแบบทำซ้ำในการแก้ปัญหา
+หมายเหตุ ให้แสดงข้อความแจ้งข้อผิดพลาดที่อาจเกิดขึ้น ดังนี้
+
+“Number is out of range, program is terminated.” เมื่อเดือนไม่อยู่ในช่วง 0 – 1000
+ตัวอย่าง Input/Output 1
+
+Enter a decimal number (0-1000): 180
+180 in decimal is 10110100 in binary.
+ตัวอย่าง Input/Output 2
+
+Enter a decimal number (0-1000): -2
+Number is out of range, program is terminated.
+
+6.12 Days of Christmas
+
+พิจารณาเพลง 12 Days of Christmas ที่มีเนื้อร้องในหน้าสุดท้าย จงเขียนโปรแกรมเพื่อรับจำนวนเต็มที่มีค่า 1 – 12 ที่ใช้แทนลำดับวันในเพลง 12 Days of Christmas แล้วแสดงผลสิ่งของที่จะได้รับในวันลำดับนั้นๆ ตามเนื้อเพลง (โดยไม่อนุญาตให้แสดงเนื้อเพลงบรรทัดต่อบรรทัด) นอกจากนี้ ปรับปรุงโปรแกรมให้สามารถวนรับวันที่อื่นๆ จนกว่าผู้ใช้จะป้อนวันที่เป็น 0
+
+On the first day of Christmas, my true love sent to me:
+A Partridge in a Pear Tree.
+
+On the second day of Christmas, my true love sent to me:
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the third day of Christmas, my true love sent to me:
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the fourth day of Christmas, my true love sent to me:
+Four Calling Birds
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the fifth day of Christmas, my true love sent to me:
+Five Golden Rings
+Four Calling Birds
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the sixth day of Christmas, my true love sent to me:
+Six Geese a Laying
+Five Golden Rings
+Four Calling Birds
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the seventh day of Christmas, my true love sent to me:
+Seven Swans a Swimming
+Six Geese a Laying
+Five Golden Rings
+Four Calling Birds
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the eighth day of Christmas, my true love sent to me:
+Eight Maids a Milking
+Seven Swans a Swimming
+Six Geese a Laying
+Five Golden Rings
+Four Calling Birds
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the ninth day of Christmas, my true love sent to me:
+Nine Ladies Dancing
+Eight Maids a Milking
+Seven Swans a Swimming
+Six Geese a Laying
+Five Golden Rings
+Four Calling Birds
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the tenth day of Christmas my true love sent to me:
+Ten Lords a Leaping
+Nine Ladies Dancing
+Eight Maids a Milking
+Seven Swans a Swimming
+Six Geese a Laying
+Five Golden Rings
+Four Calling Birds
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the eleventh day of Christmas my true love sent to me:
+Eleven Pipers Piping
+Ten Lords a Leaping
+Nine Ladies Dancing
+Eight Maids a Milking
+Seven Swans a Swimming
+Six Geese a Laying
+Five Golden Rings
+Four Calling Birds
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+
+On the twelfth day of Christmas my true love sent to me:
+Twelve Drummers Drumming
+Eleven Pipers Piping
+Ten Lords a Leaping
+Nine Ladies Dancing
+Eight Maids a Milking
+Seven Swans a Swimming
+Six Geese a Laying
+Five Golden Rings
+Four Calling Birds
+Three French Hens
+Two Turtle Doves
+And a Partridge in a Pear Tree.
+หมายเหตุ ให้แสดงข้อความแจ้งข้อผิดพลาดที่อาจเกิดขึ้น ดังนี้
+
+“Day is out of range.” เมื่อวันที่ไม่อยู่ในช่วง 1 – 12
+ตัวอย่าง Input/Output
+
+Enter day (1 to 12, 0 to quit): 6
+On the sixth day of Christmas, my true love sent to me:
+Six Geese a Laying,
+Five Golden Rings,
+Four Calling Birds,
+Three French Hens,
+Two Turtle Doves,
+And a Partridge in a Pear Tree.
+Enter day (1 to 12, 0 to quit): 11
+On the eleventh day of Christmas, my true love sent to me:
+Eleven Pipers Piping,
+Ten Lords a Leaping,
+Nine Ladies Dancing,
+Eight Maids a Milking,
+Seven Swans a Swimming,
+Six Geese a Laying,
+Five Golden Rings,
+Four Calling Birds,
+Three French Hens,
+Two Turtle Doves,
+And a Partridge in a Pear Tree.
+Enter day (1 to 12, 0 to quit): 22
+Day is out of range.
+Enter day (1 to 12, 0 to quit): 0
+
+7.วันที่เท่าไหร่ในปี
+
+จงเขียนโปรแกรมเพื่อรับจำนวนเต็มสามจำนวนประกอบด้วย วันที่ เดือนและปีคริสตศักราช ตามลำดับ แล้วให้แสดง ผลลัพธ์ว่าวันที่ดังกล่าวเป็นวันที่เท่าไหร่ในปี และเหลืออีกกี่วันจึงจะถึงวันสิ้นปี
+
+หมายเหตุ ให้แสดงข้อความแจ้งข้อผิดพลาดที่อาจเกิดขึ้น ดังนี้
+
+“Invalid day.” เมื่อวันที่ไม่สอดคล้องกับเดือนและปีที่ระบุ
+“Invalid month.” เมื่อเดือนไม่อยู่ในช่วง 1 – 12
+“Invalid year.” เมื่อปีมีค่าน้อยกว่าหรือเท่ากับ 0
+หมายเหตุ ให้เริ่มต้นเขียนโปรแกรมโดยมีสมมติฐานว่าข้อมูลนำเข้าทุกค่าถูกต้อง และทดสอบให้มั่นใจว่าได้ผลลัพธ์ที่ถูกต้องก่อน จากนั้นจึงค่อยเพิ่มส่วนการตรวจสอบความถูกต้องของข้อมูลนำเข้าทีละค่า
+
+ตัวอย่าง Input/Output
+
+Enter day: 28
+Enter month: 9
+Enter year: 2014
+28 September 2014 is day number 271.
+There are 94 days remaining in this year.

@@ -1,0 +1,96 @@
+1.ระยะทาง
+
+จงเขียนโปรแกรมเพื่อรับค่าพิกัดของจุด a และ b บนระนาบ สมมติให้มีค่าเป็น (xa, ya) และ (xb, yb) ตามลำดับ เมื่อ xa, ya, xb และ yb เป็นจำนวนเต็มใดๆ ที่ไม่เท่ากับ 0 กำหนดให้แกน x เป็นแกนตะวันออก-ตะวันตก และแกน y เป็นแกนเหนือ-ใต้ เหมือนแผนที่ นั่นคือค่า x ที่มากจะอยู่ทางตะวันออก ส่วนค่า y ที่มากจะอยู่ทางเหนือ
+
+โปรแกรมจะคำนวณระยะทางจากการเชื่อมระหว่างจุดทั้งสอง พร้อมด้วยระยะทางในแนวตั้งและระยะทางในแนวนอน จากนั้นจะแสดงทิศของการเดินทางจากจุด a ไป b ซึ่งมีด้วยกัน 9 แบบที่แตกต่างกัน คือ north, south, east, west, north-east, north-west, south-east, south-west และ nowhere (เมื่อ a และ b เป็นจุดเดียวกัน)
+
+โดยระยะทางระหว่าง (xa, ya) และ (xb, yb) = ?(xa - xb)2 + (ya - yb)2
+
+ให้วนซ้ำเพื่อรับข้อมูลนำเข้าชุดถัดไปจนกว่าผู้ใช้จะป้อนพิกัด (0, 0) ให้ทั้งสองจุด
+
+ตัวอย่าง Input/Output
+
+<<Point a>>
+Enter x coordinate: 2
+Enter y coordinate: -1
+<<Point b>>
+Enter x coordinate: -2
+Enter y coordinate: 2
+Distance between (2, -1) and (-2, 2):
+Euclidean distance is 5.00.
+Horizontal distance is 4.
+Vertical distance is 3.
+We are going north-west.
+<<Point a>>
+Enter x coordinate: 0
+Enter y coordinate: 0
+<<Point b>>
+Enter x coordinate: 0
+Enter y coordinate: 0
+Goodbye
+
+2.จงเขียนโปรแกรมเพื่อรับค่าจำนวนเต็ม 2 จำนวน โดยจำนวนแรกมีค่ามากกว่าหรือเท่ากับศูนย์ และจำนวนที่สอง กำหนดให้เป็นเลข 0 ถึง 9 เท่านั้น จากนั้นให้สร้างและเรียกใช้ฟังก์ชัน count_digit(n, x) เพื่อส่งกลับค่าที่ได้จากการนับว่าในจำนวนเต็ม n นั้นมีเลข x อยู่กี่ตัว
+
+ตัวอย่าง Input/Output
+
+Enter a number: 2132132
+Enter a digit: 2
+Digit 2 occurs 3 times.
+ตัวอย่าง Input/Output
+
+Enter a number: 12345
+Enter a digit: 4
+Digit 4 occurs 1 time.
+ตัวอย่าง Input/Output
+
+Enter a number: 1234
+Enter a digit: 5
+Digit 5 occurs 0 times.
+ตัวอย่าง Input/Output
+
+Enter a number: 2132132
+Enter a digit: 20
+Invalid digit.
+ตัวอย่าง Input/Output
+
+Enter a number: -6
+Enter a digit: 2
+Invalid number.
+ตัวอย่าง Input/Output
+
+Enter a number: -6
+Enter a digit: 20
+Invalid number.
+Invalid digit.
+
+3.ตัวประกอบที่เป็นจำนวนเฉพาะทั้งหมดของเลขจำนวนเต็ม
+
+จงเขียนโปรแกรมเพื่อรับเลขจำนวนเต็มบวกจากผู้ใช้ และหาตัวประกอบที่เป็นจำนวนเฉพาะทั้งหมดของค่านั้น โดยจะพิมพ์ตัวประกอบทีละตัวโดยเรียงจากตัวประกอบที่มีค่าน้อยที่สุดก่อนและพิมพ์ตัวประกอบหนึ่งตัวต่อหนึ่งบรรทัด ผลคูณของตัวประกอบทั้งหมดต้องเป็นจำนวนเต็มนั้น
+
+หมายเหตุ: 1 ไม่นับเป็นจำนวนเฉพาะและไม่มีตัวประกอบด้วย ถ้าข้อมูลเข้าเป็น 1 นั้นไม่ต้องพิมพ์อะไรเลย
+
+คำแนะนำ: ไม่ต้องกังวลเรื่องการหาจำนวนเฉพาะ ให้เริ่มจากจำนวนเฉพาะค่าแรกคือ 2 เมื่อแยกตัวประกอบของ 2 (ถ้าแยกได้) ออกมาจากเลขนั้นหมดแล้ว จำนวนอื่นที่มี 2 เป็นตัวประกอบจะไม่สามารถหารค่าที่เหลือลงตัวได้อีกต่อไป เช่นเมื่อเราแยก 300 = 2 x 2 x 75 แล้ว จำนวนอื่นที่มี 2 เป็นตัวประกอบเช่น 4, 6, หรือ 8 จะไม่มีทางหาร 75 ลงตัวได้
+
+ข้อความโต้ตอบ
+
+ให้พิมพ์คำว่า “Enter positive integer: “ เพื่อรับข้อมูลจากผู้ใช้
+ให้พิมพ์คำว่า “Invalid number.” ถ้าขอบเขตของข้อมูลเข้าไม่เป็นไปตามที่กำหนด
+ตัวอย่าง Input/Output 1
+
+Enter positive integer: 300
+2
+2
+3
+5
+5
+ตัวอย่าง Input/Output 2
+
+Enter positive integer: 1
+ตัวอย่าง Input/Output 3
+
+Enter positive integer: 13
+13
+ตัวอย่าง Input/Output 4
+
+Enter positive integer: 0
+Invalid number.

@@ -1,0 +1,131 @@
+1.บริษัท ACME
+
+บริษัท ACME จำกัด ต้องการให้ส่วนลดกับลูกค้าที่ซื้อสินค้าในมูลค่าตั้งแต่ 1,000 บาทขึ้นไป โดยถ้าลูกค้าซื้อสินค้าตั้งแต่ 1,000 ขึ้นไปแต่น้อยกว่า 3,000 บาท ให้ส่วนลด 10% และถ้าซื้อสินค้าตั้งแต่ 3,000 บาทขึ้นไป ให้ส่วนลด 15% จงเขียนโปรแกรมที่รับจำนวนราคาสินค้าแล้วคำนวนเงินสุทธิที่ลูกค้าต้องชำระ
+
+ตัวอย่างข้อมูล
+
+Enter buying amount: 4200.0
+Amount due after discount is 3570.00 baht.
+
+2.บริษัท ABC
+
+บริษัท ABC จำกัด ขายสินค้า 3 ชนิด คือ A, B และ C ในราคาชิ้นละ 6 บาท 3 บาท และ 2 บาท ตามลำดับ โดย
+บริษัทได้กำหนดเงื่อนไขในการซื้อสินค้าของลูกค้า คือ แต่ละครั้งลูกค้าต้องซื้อสินค้าทั้งสามชนิด โดยต้องซื้อสิ้นค้า A จำนวนไม่ น้อยกว่าสินค้า B และซื้อสินค้า C ไม่น้อยกว่าสองเท่าของสินค้า A ไม่เช่นนั้นบริษัทจะไม่ขายสินค้าให้ จงเขียนโปรแกรมเพื่อ ประเมินว่าจำนวนสินค้าที่ลูกค้าซื้อเป็นไปตามเงื่อนไขที่บริษัทกำหนดหรือไม่ และถ้าเป็นไปตามกำหนดให้คำนวณราคาสินค้ารวมที่ ลูกค้าต้องชำระ มิฉะนั้นให้แสดงข้อความแจ้งเตือนที่เหมาะสมให้กับลูกค้า
+
+ตัวอย่าง Input/Output 1
+
+Enter quantity of A: 4
+Enter quantity of B: 5
+Enter quantity of C: 6
+Incorrect order - too few As.
+Incorrect order - too few Cs.
+ตัวอย่าง Input/Output 2
+
+Enter quantity of A: 10
+Enter quantity of B: 8
+Enter quantity of C: 15
+Incorrect order - too few Cs.
+ตัวอย่าง Input/Output 3
+
+Enter quantity of A: 10
+Enter quantity of B: 7
+Enter quantity of C: 25
+Total amount due is 131.00 baht.
+
+3.ค่าจอดรถ
+
+จงเขียนโปรแกรมเพื่อรับจำนวนชั่วโมง และจำนวนนาทีที่ลูกค้านำรถเข้ามาจอดในลานจอดรถแห่งหนึ่ง ซึ่งมีอัตราค่าจอดรถเป็นดังนี้ 15 นาทีแรกฟรี, 2 ชั่วโมงแรก 10 บาท และชั่วโมงที่สามเป็นต้นไปคิดเพิ่มชั่วโมงละ 10 บาท และเศษของชั่วโมงปัดเป็น 1 ชั่วโมง แล้วให้แสดงผลค่าจอดรถที่ต้องชำระ
+
+หมายเหตุ: ให้เขียนโปรแกรมในรูปแบบของฟังก์ชัน และต้องตรวจสอบข้อมูลเข้าด้วยว่าถูกต้องหรือไม่
+
+ตัวอย่าง Input/Output 1
+
+Enter number of hours: 4
+Enter number of minutes: 17
+Total amount due is 40 Baht.
+ตัวอย่าง Input/Output 2
+
+Enter number of hours: 0
+Enter number of minutes: 12
+No charge, thanks.
+
+
+4.พิซซา
+
+Bingo Pizza เป็นร้านขายพิซซาซึ่งขายพิซซาสามขนาด ได้แก่ ขนาดเล็ก (Small) กลาง (Medium)
+และใหญ่ (Large) ตามขนาดเส้นผ่าศูนย์กลาง (diameter) 10, 12 และ 16 นิ้ว ตามลำดับ พิซซาทั้งสาม ขนาดแบ่งออกเป็น 2 ประเภท ได้แก่ แบบปกติ (ไม่เพิ่มเครื่องปรุง) และแบบพิเศษ (เพิ่มเครื่องปรุง)
+จงเขียนโปรแกรมเพื่อคำนวณหาราคาขายพิซซา เมื่อผู้ซื้อระบุขนาดและรายการเครื่องปรุงที่ต้องการเพิ่มเติม โดย Bingo Pizza กำหนดให้ราคาขาย (price) พิซซ่าคิดเป็น 1.5 เท่าของต้นทุน (cost) ดังสูตร
+
+price = 1.5 x cost
+
+เมื่อต้นทุนของพิซซ่าแต่ละถาดคำนวณจากสูตร
+
+cost = fixedcost + (basecost x area) + (extracost x area)
+
+และ
+
+area = ? x (diameter / 2)2
+
+Bingo Pizza กำหนด fixedcost และ basecost ให้มีค่าเท่ากับ 3.50 และ 2 บาท ตามลำดับ ในกรณีที่ผู้ซื้อต้องการเพิ่มเครื่องปรุงต้องคำนวณค่าใช้จ่ายเพิ่มเติม (extracost) ดังนี้
+
+เพิ่ม pepperoni เพิ่ม extracost 0.50 บาท
+เพิ่ม cheese เพิ่ม extracost 0.25 บาท และ
+เพิ่ม mushroom เพิ่ม extracost 0.01 บาท
+หมายเหตุ ข้อมูลขนาดของพิซซาที่ถูกต้องนั้นจะเป็นตัวเล็กหรือตัวใหญ่ก็ได้ แต่ตัวอักษรอื่นที่ไม่ใช่ s, m, l หรือ S, M, L จะถือเป็นข้อมูลที่ผิด ส่วนการเพิ่มเครื่องปรุงนั้นจะเพิ่มก็ต่อเมื่อผู้ใช้ใส่ y หรือ Y เมื่อถามเท่านั้น ถ้าใส่อักษรอื่นไม่ถือว่าผิดแต่จะไม่เพิ่มเครื่องปรุงนั้น
+
+ตัวอย่าง Input/Output 1
+
+Select pizza size (s-small, m-medium, l-large): k
+Invalid size, try again later, bye.
+ตัวอย่าง Input/Output 2
+
+Select pizza size (s-small, m-medium, l-large): s
+More pepperoni (y/n)?: y
+More cheese (y/n)?: y
+More mushroom (y/n)?: n
+>> Price of the pizza is 329.23 baht.
+ตัวอย่าง Input/Output 3
+
+Select pizza size (s-small, m-medium, l-large): L
+More pepperoni (y/n)?: b
+More cheese (y/n)?: Y
+More mushroom (y/n)?: y
+>> Price of the pizza is 686.85 baht.
+
+5.Guessing 1
+
+จงเขียนโปรแกรมสำหรับเล่นเกมทายตัวเลข โดยกำหนดให้โปรแกรมสร้างเลขเป้าหมาย (target) ที่มีค่าตั้งแต่ 0 – 100
+แล้วรับตัวเลขจากผู้เล่นที่ทายเข้ามา กำหนดให้เป้าหมายเท่ากับ 72
+
+ตัวอย่าง Input/Output 1
+
+Enter your guess (0 – 100): 111
+Sorry, out of range, try again later.
+ตัวอย่าง Input/Output 2
+
+Enter your guess (0 – 100): 16
+Sorry, your guess is wrong, try again later.
+ตัวอย่าง Input/Output 3
+
+Enter your guess: 72
+Congratulations, your guess is correct.
+
+6.Guessing 2
+
+จงเขียนโปรแกรมสำหรับเล่นเกมทายตัวเลข โดยกำหนดให้โปรแกรมสร้างเลขเป้าหมาย (target) ที่มีค่าตั้งแต่ 0 – 100 แล้วรับตัวเลขจากผู้เล่นที่ทายเข้ามา โดยให้เพิ่มการเปรียบเทียบเพื่อบอกผลการทายตัวเลขในกรณีที่ทายไม่ถูกเป็น 3 กรณี คือ มากกว่าค่าเป้าหมาย,น้อยกว่าค่าเป้าหมาย และเท่ากับค่าเป้าหมาย กำหนดให้เป้าหมายคือ 72
+ตัวอย่าง Input/Output 1
+
+Enter your guess (0 – 100): 45
+Sorry, your guess is too low, try again later.
+ตัวอย่าง Input/Output 2
+
+Enter your guess (0 – 100): 99
+Sorry, your guess is too high, try again later.
+ตัวอย่าง Input/Output 3
+
+Enter your guess (0 – 100): 72
+Congratulations, your guess is correct.
+ตัวอย่าง Input/Output 4
+
+Enter your guess (0 – 100): -5
+Sorry, out of range, try again later."
